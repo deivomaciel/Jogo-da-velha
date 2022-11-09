@@ -7,7 +7,7 @@
 ##
 
 <p> 
-  <h1>Disponível em: https://jogo-da-velha-1.vercel.app/</h1> 
+  <h1>Disponível em: https://jogo-da-velha-on.vercel.app//</h1> 
 </p>
 
 Tecnologias:
