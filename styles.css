@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif
+}
+
+:root {
+    --primary: rgb(76, 129, 177);
+    --hover: rgb(60, 110, 156);
+}
+
+body {
+    margin: 0;
+    background: #ccc;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.content {
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 32pt;
+    background: var(--primary);
+}
+
+.content:hover {
+    background: var(--hover);
+}
+
+.block-2 {
+    border-radius: 16px 0 0 0;
+}
+
+.block-3 {
+    border-radius: 0 16px 0 0;
+}
+
+.block-7 {
+    border-radius: 0 0 0 16px;
+}
+
+.block-9 {
+    border-radius: 0 0 16px 0;
+}
+
+button {
+    width: 400px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    margin-top: 32px;
+    font-size: 30px;
+    color: #fff;
+    transition: all .2s;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, .5);
+    background: var(--primary);
+}
+
+button:disabled {
+    cursor: inherit;
+    background: none;
+    box-shadow: none;
+    border: 3px solid rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .5);    
+}
+
+button:valid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, .25);
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 352px;
+        height: 352px;
+    }
+
+    .content {
+        width: 112px;
+        height: 112px;
+        font-size: 24pt;
+    }
+
+    button {
+        width: 352px;
+    }
+}
+
+@media (min-width: 360px) {
+    .container {
+        width: 336px;
+        height: 336px;
+    }
+
+    .content {
+        width: 107px;
+        height: 107px;
+        font-size: 24pt;
+    }
+
+    button {
+        width: 336px;
+    }
+}
